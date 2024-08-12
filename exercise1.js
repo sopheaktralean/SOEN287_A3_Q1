@@ -76,6 +76,8 @@ function findFirstFourDigits(input) {
     return false;
 }
 
+const port = process.env.PORT || 4000;
+
 // Create the server
 http.createServer((req, res) => {
     // Serving the HTML form
@@ -128,6 +130,6 @@ http.createServer((req, res) => {
             res.end(`<h1 style="color: green;">Result</h1><p>${result}</p><a href="/" style="color: green; font-weight:bold;">Go Back</a>`);
         });
     }
-}).listen(4000, () => {
-    console.log('Server is running on http://localhost:4000');
+}).listen(port, () => {
+    console.log('Server is running on http://localhost:${port}');
 });
