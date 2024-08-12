@@ -1,0 +1,16 @@
+{
+    "name": "exercise1",
+    "version": "1.0.0",
+    "description": "A Node.js server for various string and number operations.",
+    "main": "exercise1.js",
+    "scripts": {
+      "start": "node exercise1.js"
+    },
+    "dependencies": {
+      "querystring": "^0.2.1"
+    },
+    "engines": {
+      "node": ">=12.0.0"
+    }
+  }
+  

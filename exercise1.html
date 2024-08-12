@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions</title>
+        <style>
+            .container{
+                background-color: rgb(247, 242, 210);
+                height: 80px;
+                width: 300px;
+                margin: 10px;
+                padding: 30px;
+                border: 2px solid #f8e36b;
+                border-radius: 4px;
+                font-size: 16px;
+                font-style: normal;
+                text-align: center;
+            }
+            .submit-button {
+                width: 70px;
+                height:25px;
+                background-color:rgb(248, 207, 194);
+                color: #000000;
+                border: 1px solid rgb(247, 177, 156);
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .submit-button:hover {
+                background-color: rgb(231, 144, 117);
+                color: rgb(247, 242, 210);
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="color: rgb(216, 7, 7); margin-left:10px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Exercise 1</h2>
+        <form class="container" action="/sum" method="POST">
+            <legend>Find Summation</legend>
+            <label for="input-sum">Input: </label>
+            <input type="text" id="input-sum" name="input" placeholder="Example: 1+2+2+..." required>
+            <br><br>
+            <button type="submit" class="submit-button">Calculate</button>
+        </form>
+        <br>
+        <form class="container" action="/modify" method="POST">
+            <legend>Find Upper Case and Lower Case</legend>
+            <label for="input-modify">Input: </label>
+            <input type="text" id="input-modify" name="input" placeholder="Example: apple is a vegetable..." required>
+            <br><br>
+            <button type="submit" class="submit-button">Modify</button>
+        </form>
+        <br>
+        <form class="container" action="/average" method="POST">
+            <legend>Find Average and Median</legend>
+            <label for="input-average">Input: </label>
+            <input type="text" id="input-average" name="input" placeholder="Example: 2 3 1 4 5..." required>
+            <br><br>
+            <button type="submit" class="submit-button">Calculate</button>
+        </form>
+        <br>
+        <form class="container" action="/first-four" method="POST">
+            <legend>Find First 4-Digits</legend>
+            <label for="input-first-four">Input: </label>
+            <input type="text" id="input-first-four" name="input" placeholder="Example: 2 3 1 4 5..." required>
+            <br><br>
+            <button type="submit" class="submit-button">Show</button>
+        </form>
+    </body>
+</html>
